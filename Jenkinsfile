@@ -33,7 +33,7 @@ pipeline {
                     steps {
                         withSonarQubeEnv('SonarQubeServer') {
                             bat """
-                                ${tool 'SonarScanner'}\\bin\\sonar-scanner ^
+                                mvn sonar:sonar ^
                                 -Dsonar.projectKey=devops-demo ^
                                 -Dsonar.sources=src ^
                                 -Dsonar.projectName=DevOps-Demo ^
