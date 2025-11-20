@@ -10,7 +10,7 @@ pipeline {
         SONARQUBE_SERVER = 'SonarQubeServer'  // The name of the SonarQube server configured in Jenkins
         SONAR_TOKEN = 'sqa_3bb2854abb8e1a4d21c3b1d1c22755319bb1ee0c' // Store the token securely
         DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
-        DOCKERHUB_REPO = 'musas/sep2_week5_f2025_incalss'
+        DOCKERHUB_REPO = 'musas/sep2week5f2025'
         DOCKER_IMAGE_TAG = 'latest'
 
 
@@ -19,7 +19,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/musas888888/week5_inclass.git'
+                git branch: 'main', url: 'https://github.com/musas888888/week5_inclass.git'
             }
         }
 
