@@ -6,11 +6,11 @@ pipeline {
 
     environment {
      PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
-           JAVA_HOME = 'C:\Program Files\Java\jdk-17'  // Adjust to your actual JDK pat
+           JAVA_HOME = 'C:\\Program Files\\Amazon Corretto\\jdk17.0.15_6'  // Adjust to your actual JDK pat
         SONARQUBE_SERVER = 'SonarQubeServer'  // The name of the SonarQube server configured in Jenkins
         SONAR_TOKEN = 'sqa_3bb2854abb8e1a4d21c3b1d1c22755319bb1ee0c' // Store the token securely
         DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
-        DOCKERHUB_REPO = 'amirdirin/sep2_week5_f2025_incalss'
+        DOCKERHUB_REPO = 'musas/sep2_week5_f2025_incalss'
         DOCKER_IMAGE_TAG = 'latest'
 
 
